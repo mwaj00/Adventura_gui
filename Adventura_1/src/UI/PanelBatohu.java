@@ -18,11 +18,15 @@ import logika.HerniPlan;
 import logika.Vec;
 import utils.Observer;
 
+<<<<<<< HEAD
 /**
  * Panel zobrazí obsah batohu hráče 
  *
  * @author Julietta Mwansová
  */
+=======
+
+>>>>>>> 23d3802c39be89c440e7241fcb78b260c4b1a590
 public class PanelBatohu implements Observer{
     
     private HerniPlan plan;
@@ -31,12 +35,15 @@ public class PanelBatohu implements Observer{
     
     private TextArea centralText;
 
+<<<<<<< HEAD
     /**
      * konstruktur
      *
      * @param plan
      */
     
+=======
+>>>>>>> 23d3802c39be89c440e7241fcb78b260c4b1a590
     public PanelBatohu(HerniPlan plan,TextArea text) {
        this.plan = plan;
        plan.registerObserver(this);
@@ -44,11 +51,14 @@ public class PanelBatohu implements Observer{
         init();
     }
 
+<<<<<<< HEAD
      /**
      * Metoda pro inicializaci komponent kliknutí mýši v panelu.
      */
     
     
+=======
+>>>>>>> 23d3802c39be89c440e7241fcb78b260c4b1a590
     private void init() {
         list = new ListView<>();
         data = FXCollections.observableArrayList();
@@ -101,10 +111,14 @@ public class PanelBatohu implements Observer{
     public ListView<Object> getList() {
         return list;
     }
+<<<<<<< HEAD
  /**
      * metoda pro aktulizaci panelu
      */
     
+=======
+
+>>>>>>> 23d3802c39be89c440e7241fcb78b260c4b1a590
     @Override 
     public void update() 
     {        
